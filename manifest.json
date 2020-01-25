@@ -1,0 +1,20 @@
+{
+  "name": "CalvinHobbes Discoverer",
+  "description": "An extension to retrieve a random Calvin and Hobbes comic",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["popup.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab","tabs", "http://*/*"
+  ],
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  }
+}
