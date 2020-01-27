@@ -17,15 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const a = document.createElement('a');
         a.href = comic_link;
-        a.target = "_blank";
+        a.target = '_blank';
         a.innerHTML = comic_link;
 
         const img = document.createElement('img');
         img.src = img_link;
 
-        const comic = document.getElementById("comic");
+        const comic = document.getElementById('comic');
         comic.appendChild(a);
         comic.appendChild(img);
+
+        const gif = document.getElementById('gif');
+        gif.parentNode.removeChild(gif);
     });
 
 });
