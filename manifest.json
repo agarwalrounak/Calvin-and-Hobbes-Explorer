@@ -1,12 +1,19 @@
 {
-  "name": "CalvinHobbes Discoverer",
-  "description": "Display a random Calvin and Hobbes comic",
-  "version": "1.0",
   "manifest_version": 2,
+  "name": "CalvinHobbes Discoverer",
+  "version": "1.0",
+  "description": "Display a random Calvin and Hobbes comic",
+  "icons": {
+    "16": "icon-16.png",
+    "24": "icon-24.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
   "content_scripts": [
     {
       "matches": [
-        "http://*/*"
+        "<all_urls>"
       ],
       "js": [
         "popup.js"
@@ -14,9 +21,7 @@
     }
   ],
   "permissions": [
-    "activeTab",
-    "tabs",
-    "http://*/*"
+    "activeTab"
   ],
   "browser_action": {
     "default_popup": "hello.html",
