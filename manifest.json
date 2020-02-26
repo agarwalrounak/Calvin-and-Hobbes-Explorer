@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "CalvinHobbes Discoverer",
+  "name": "Calvin and Hobbes Discoverer",
   "version": "1.0",
   "description": "Display a random Calvin and Hobbes comic",
   "icons": {
