@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const a = document.createElement('a');
         a.href = comic_link;
         a.target = '_blank';
-        a.innerHTML = comic_link;
+        a.appendChild(document.createTextNode(comic_link));
+        // a.innerHTML = comic_link;
 
         const img = document.createElement('img');
         img.src = img_link;
